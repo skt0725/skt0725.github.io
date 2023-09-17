@@ -7,8 +7,24 @@
     <title>"Momentum"</title>
 </head>
 <body>
-    <h1 id="title">"Grab me"</h1>
-    <h2 class="js-clock" style="text-align: left;"></h2>
-    <script src="app.js"></script>
+    <h2 class="js-clock" style="text-align: right; font-family: Arial, Helvetica, sans-serif;"></h2>
+    <form id="login-form" class="hidde">
+        <input required maxlength="15" type="text" placeholder="What's your name?" />
+        <button>Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press" />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
