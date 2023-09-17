@@ -11,7 +11,7 @@ function paintGreetings(username) {
 function onLoginSubmit(event) {
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    const username = loginInput.ariaValueMax;
+    const username = loginInput.value;
     localStorage.setItem("username", username);
     paintGreetings(username);
 }
