@@ -15,7 +15,7 @@ function onLoginSubmit(event) {
     localStorage.setItem("username", username);
     paintGreetings(username);
 }
-loginForm.add("submit", onLoginSubmit);
+loginForm.addEventListener("submit", onLoginSubmit);
 
 const savedUsername = localStorage.getItem("username");
 
